@@ -1,0 +1,235 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+ body {
+   margin-top: 0;
+   @include outer-container(100%);
+   background-image: url("../images/bg.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+.subscribe {
+  @include span-columns(6);
+  @include shift(6);
+  height: 50px;
+  h1 {
+    color: white;
+    font-size: 1em;
+    padding-top: 8px;
+    font-weight: 500;
+  }
+}
+
+.outerHead {
+  @include span-columns(3);
+  @include shift(2);
+  margin: 0;
+}
+
+.face, .RSS, .twitter, .youtube {
+  color: white;
+  font-size: 3em;
+  @include span-columns(3);
+  padding: 2px 2px 0 8px;
+  border-bottom: 4px solid #7D7C7A;
+}
+
+.face {
+  background-color: #445897;
+}
+
+.RSS {
+  background-color: #CD9131;
+}
+
+.twitter {
+  background-color: #6A8DC7;
+}
+
+.youtube {
+  background-color: #B2382D;
+}
+
+.subLinks {
+  @include span-columns(6);
+  @include shift(2);
+}
+header {
+
+  @include span-columns(10);
+  @include shift(1);
+}
+ main {
+   @include span-columns(10);
+   @include shift(1);
+ }
+.headinfo {
+  @include span-columns(12);
+  margin-top: 30px;
+  div {
+    @include span-columns(3);
+    @include omega(4n);
+    background-color: #B4292E;
+    height: 46px;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    font-family: 'Lato', sans-serif;
+      border-bottom: 4px solid #7D7C7A;
+  }
+}
+
+
+.topImage {
+  @include span-columns(12);
+  height: 360px;
+  margin-top: 20px;
+  border: 5px white solid;
+  margin-bottom: 20px;
+}
+
+
+
+.topPhoto {
+  background-image: url("../images/top-image.png");
+  @include span-columns(12);
+  background-size: cover;
+  position: relative;
+  height: 350px;
+  background-position: center top;
+}
+
+.grid {
+  background-image: url("../images/grid.png");
+  background-size: cover;
+  @include span-columns(12);
+  height: 350px;
+  opacity: .8;
+}
+
+.logo {
+  position: absolute;
+  left: 80px;
+  top: 60px;
+}
+
+.threeButts {
+  @include span-columns(2);
+  @include shift(5.5);
+  button {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background: white;
+    border-style: none;
+  }
+  button:focus {
+    outline: none;
+  }
+}
+
+.articles {
+  @include span-columns(12);
+  article {
+    background: white;
+    height: 350px;
+    padding: 5px 25px 5px 25px;
+    @include span-columns(4);
+    @include omega(3n);
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    margin-top: 20px;
+      h3{
+      font-size: 1.15em;
+    }
+    h4 {
+      color: #BCBCBC;
+      font-size: .8em;
+      font-weight: lighter;
+    }
+    p {
+      color: #575757;
+      font-size: 1em;
+    }
+    .more {
+      color: #B4252B;
+      text-decoration: none;
+      font-weight: bolder;
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      bottom: 5%;
+      left: 32%;
+
+    }
+  }
+}
+
+.featuredPeople {
+  @include span-columns(12);
+  height: 495px;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 3em;
+    .other {
+      @include span-columns(8 of 12);
+      margin: 0;
+    }
+    .tomWrap {
+      @include span-columns(4 of 12);
+      @include omega();
+    }
+    .tom {
+      background-image: url("../images/sk8er-2.png");
+      height: 495px;
+      margin-left: 24px;
+      @include span-columns(4 of 4);
+      border: 4px white solid;
+      padding-top: 160px;
+      background-position: 80% 50%;
+
+    }
+    .lance {
+      background-image: url("../images/sk8er-4.png");
+      @include span-columns(4 of 8);
+      height: 235px;
+      border: 4px white solid;
+      padding-top: 50px;
+      background-position: 100% 50%;
+    }
+    .rod {
+      background-image: url("../images/sk8er-3.png");
+      @include span-columns(4 of 8);
+      @include omega();
+      height: 235px;
+      border: 4px white solid;
+      padding-top: 50px;
+    }
+    .steve {
+      background-image: url("../images/sk8er-1.png");
+      height: 235px;
+      margin-top: 24px;
+      @include span-columns(8 of 8);
+      @include omega();
+      border: 4px white solid;
+      padding-top: 80px;
+      background-position: 60%;
+
+    }
+}
+
+.boards {
+  @include span-columns(12);
+  background-color: white;
+   img {
+     margin-right: 40px;
+   }
+   img:nth-child(10) {
+     margin: 0;
+   }
+   img:nth-child(1) {
+     margin-left: 20px;
+   }
+}
