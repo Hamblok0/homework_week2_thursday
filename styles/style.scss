@@ -31,7 +31,7 @@
   font-size: 3em;
   @include span-columns(3);
   padding: 2px 2px 0 8px;
-  border-bottom: 4px solid #7D7C7A;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
 }
 
 .face {
@@ -75,7 +75,7 @@ header {
     color: white;
     padding-top: 15px;
     font-family: 'Lato', sans-serif;
-      border-bottom: 4px solid #7D7C7A;
+      border-bottom: 4px solid rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -223,6 +223,7 @@ header {
 .boards {
   @include span-columns(12);
   background-color: white;
+  margin-top: 25px;
    img {
      margin-right: 40px;
    }
@@ -232,4 +233,74 @@ header {
    img:nth-child(1) {
      margin-left: 20px;
    }
+}
+
+footer {
+  @include span-columns(10);
+  @include shift(1);
+  background-color: white;
+  margin-top: 35px;
+  padding: 30px 30px 35px 35px;
+  h5 {
+    text-align: left;
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .contactUs {
+    @include span-columns(5 of 10);
+    .face, .RSS, .twitter, .youtube {
+      @include span-columns(1);
+      height: 30px;
+      background-color: gray;
+      font-size: 1em;
+      padding-left: 3px;
+      border: none;
+      }
+    }
+  }
+  .commentBox {
+    @include span-columns(5 of 10);
+
+    input {
+      height: 45px;
+      @include span-columns(5 of 5);
+      border-top: 4px gray solid;
+      border-left: 4px gray solid;
+      border-bottom: 1px gray solid;
+      border-right: 1px gray solid;
+      margin-bottom: 20px;
+      font-size: 1em;
+      padding-left: 10px;
+    }
+    textarea {
+      height: 110px;
+      @include span-columns(5 of 5);
+      border-top: 4px gray solid;
+      border-left: 4px gray solid;
+      border-bottom: 1px gray solid;
+      border-right: 1px gray solid;
+      font-size: 1em;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+    button {
+      @include span-columns(3 of 5);
+      @include shift(2);
+      font-size: 1em;
+      border: none;
+      background-color: #B4292E;
+      height: 46px;
+      text-align: center;
+      color: white;
+      padding-top: 5px;
+      font-family: 'Lato', sans-serif;
+      margin-top: 25px;
+
+
+    }
+  }
+
+
+button:focus {
+  outline: none;
 }
