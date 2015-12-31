@@ -6,16 +6,9 @@ html {
 
 body {
   margin-top: 0;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   background-image: url("../images/bg.jpg");
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat; }
-  body::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .subscribe {
   float: left;
@@ -30,7 +23,17 @@ body {
     color: white;
     font-size: 1em;
     padding-top: 8px;
-    font-weight: 500; }
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif; }
+
+.wrapper {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .outerHead {
   float: left;
@@ -50,7 +53,8 @@ body {
   margin-right: 2.35765%;
   width: 23.23176%;
   padding: 2px 2px 0 8px;
-  border-bottom: 4px solid rgba(0, 0, 0, 0.3); }
+  background-clip: padding-box;
+  border-bottom: 5px solid rgba(192, 192, 192, 0.5); }
   .face:last-child, .RSS:last-child, .twitter:last-child, .youtube:last-child {
     margin-right: 0; }
 
@@ -79,8 +83,7 @@ header {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%; }
+  width: 100%; }
   header:last-child {
     margin-right: 0; }
 
@@ -88,8 +91,7 @@ main {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%; }
+  width: 100%; }
   main:last-child {
     margin-right: 0; }
 
@@ -110,9 +112,10 @@ main {
     height: 46px;
     text-align: center;
     color: white;
-    padding-top: 15px;
+    padding-top: 12px;
     font-family: 'Lato', sans-serif;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.3); }
+    background-clip: padding-box;
+    border-bottom: 5px solid rgba(192, 192, 192, 0.5); }
     .headinfo div:last-child {
       margin-right: 0; }
     .headinfo div:nth-child(4n) {
@@ -196,7 +199,9 @@ main {
     width: 31.76157%;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    margin-top: 20px; }
+    margin-top: 20px;
+    background-clip: padding-box;
+    border-bottom: 5px solid rgba(192, 192, 192, 0.5); }
     .articles article:last-child {
       margin-right: 0; }
     .articles article:nth-child(3n) {
@@ -232,7 +237,8 @@ main {
   text-align: center;
   color: white;
   font-weight: bolder;
-  font-size: 3em; }
+  font-size: 3em;
+  font-family: 'Hind', sans-serif; }
   .featuredPeople:last-child {
     margin-right: 0; }
   .featuredPeople .other {
@@ -309,11 +315,15 @@ main {
   margin-right: 2.35765%;
   width: 100%;
   background-color: white;
+  background-clip: padding-box;
+  border-bottom: 5px solid rgba(192, 192, 192, 0.5);
   margin-top: 25px; }
   .boards:last-child {
     margin-right: 0; }
   .boards img {
-    margin-right: 40px; }
+    margin-right: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   .boards img:nth-child(10) {
     margin: 0; }
   .boards img:nth-child(1) {
@@ -323,11 +333,13 @@ footer {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%;
+  width: 100%;
   background-color: white;
   margin-top: 35px;
-  padding: 30px 30px 35px 35px; }
+  margin-bottom: 35px;
+  padding: 30px 30px 35px 35px;
+  background-clip: padding-box;
+  border-bottom: 5px solid rgba(192, 192, 192, 0.5); }
   footer:last-child {
     margin-right: 0; }
   footer h5 {
@@ -411,5 +423,15 @@ footer {
 
 button:focus {
   outline: none; }
+
+@media (max-width: 868px) {
+  .articles article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    height: auto; }
+    .articles article:last-child {
+      margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
