@@ -103,11 +103,12 @@ main {
   margin-top: 30px; }
   .headinfo:last-child {
     margin-right: 0; }
-  .headinfo div {
+  .headinfo a {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
+    text-decoration: none;
     background-color: #B4292E;
     height: 46px;
     text-align: center;
@@ -116,11 +117,11 @@ main {
     font-family: 'Lato', sans-serif;
     background-clip: padding-box;
     border-bottom: 5px solid rgba(192, 192, 192, 0.5); }
-    .headinfo div:last-child {
+    .headinfo a:last-child {
       margin-right: 0; }
-    .headinfo div:nth-child(4n) {
+    .headinfo a:nth-child(4n) {
       margin-right: 0; }
-    .headinfo div:nth-child(4n+1) {
+    .headinfo a:nth-child(4n+1) {
       clear: left; }
 
 .topImage {

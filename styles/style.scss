@@ -76,9 +76,10 @@ header {
 .headinfo {
   @include span-columns(12);
   margin-top: 30px;
-  div {
+  a {
     @include span-columns(3);
     @include omega(4n);
+    text-decoration: none;
     background-color: #B4292E;
     height: 46px;
     text-align: center;
